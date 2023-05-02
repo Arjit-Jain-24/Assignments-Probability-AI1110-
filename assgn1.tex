@@ -306,23 +306,19 @@ The Probability of obtaining an even prime number on each die , when a pair of d
 
 \solution
 
-Let X and Y be two random variables such that,
+Let X and Y be two random variables representing outcomes on both the die,
 \begin{align}
- & X =  \begin{cases}
-     0, \text{ if number is not an even prime number on dice 1}\\
-     1, \text{ if number is even prime number on dice 1} 
- \end{cases}\\
- & Y =  \begin{cases}
-     0, \text{ if number is not an even prime number on dice 2}\\
-     1, \text{ if number is even prime number on dice 2} 
- \end{cases}
+ X \in \{1 ,2 ,3 ,4 ,5 ,6 \} \\
+ Y \in \{1 ,2 ,3 ,4 ,5 ,6 \}
 \end{align}
- $\pr{X=1,Y=1}$ {represents the probability of occurence of even prime number on both the dice. \\Both die rolls are independent. } \\
+$\pr{X=2}$ {represents the probability of occurence of 2 on die roll 1. \\
+$\pr{Y=2}$ {represents the probability of occurence of 2 on die roll 2. \\
+ $\pr{X=2,Y=2}$ {represents the probability of occurence of 2 on both the die. \\ As both die rolls are independent. } \\
 Now,
 \begin{align}
-\pr{X=1} &= \frac{1}{6} \\ 
-\pr{Y=1} &= \frac{1}{6} \\
-\pr{X=1,Y=1}= \pr{X=1} \pr{Y=1} &= \frac{1}{6} \times \frac{1}{6}  \\
+\pr{X=2} &= \frac{1}{6} \\ 
+\pr{Y=2} &= \frac{1}{6} \\
+\pr{X=2,Y=2}= \pr{X=2} \pr{Y=2} &= \frac{1}{6} \times \frac{1}{6}  \\
 \therefore  \text{Required probability} &= \displaystyle{\frac{1}{36}}
 \end{align}
 
