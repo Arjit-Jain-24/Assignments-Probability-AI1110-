@@ -304,43 +304,60 @@ If 4-digit numbers greater than 5,000 are randomly formed from the digits 0,1,3,
 
 \solution
 
- Since 4-digit numbers greater than 5,000 are formed , The thousands place is either 7 or 5.
+    'S' = Sample space = 4-digit numbers greater than 5,000 
 
- A number is divisible by 5 if the digit at it's unit place is either 0 or 5.
+    'A' = Event that number greater than 5,000 is divisible by 5
+
+    'B' = Event that number greater than 5,000 is starting with 5
+
+    'C' = Event that number greater than 5,000 is starting with 7 \\
+
+           Since 4-digit numbers greater than 5,000 are formed , The thousands place is either 7 
+           
+           or 5.
+
+            A number is divisible by 5 if the digit at it's unit place is either 0 or 5.\\
+
+         Let X be a random variables such that,
+            \begin{align}
+             & X =  \begin{cases}
+                 1, \text{ if number greater than 5,000 is divisible by 5}\\
+                 0, \text{ if number greater than 5,000 is not divisible by 5} 
+             \end{cases}
+             \end{align}
  
 \begin{enumerate}
-    \item When repetition of digits is allowed : \\
-
-            Let Event E represents The probability of forming a number greater than 5,000 divisible by 5 when the digits are repeated .
-
-            \begin{table}[ht!]
-        		\input{tables/table1.tex}
-        		\caption{}
-        		\label{tab:xxx}
-            \end{table}
+    \item When repetition of digits is allowed : 
 
             \begin{align}
-                 \pr{\text{number divisible by 5 when digits repeated}} &= \pr{E} \\
+                n(A) &= 2 \times 5 \times 5 \times 2 - 1 = 99 \\
+                n(S) &= 2 \times 5 \times 5 \times 5 -1 = 249
+            \end{align}
+
+           
+
+
+            
+            \begin{align}
+                 \pr{X=1} &= \frac{n(A)}{n(S)} \\
                 &= \frac{99}{249} \\
                 &= \frac{33}{81} 
             \end{align}
 
     \item When repetition of digits is not allowed : \\
-    
-        The thousands place can be filled with either of the 2 digits 5 or 7 i.e by 2 ways .
 
-        The remaining 3 places can be filled with any of the remaining 4 digits .
+       \begin{align}
+           n(S) &= 2 \times 4 \times 3 \times 2 = 48 \\
+           n(B) &= 1 \times 4 \times 3 \times 2 = 24 \\
+           n(C) &= 1 \times 4 \times 3 \times 2 = 24 \\
+           n(AB) &= 1 \times 3 \times 2 \times 1 = 6 \\
+           n(AC) &= 1 \times 2 \times 3 \times 2 = 12 \\
+           n(A) &= n(AB) + n(AC) = 18
+       \end{align}
 
-            \begin{table}[h]
-        		\input{tables/table2.tex}
-        		\caption{}
-        		\label{tab:xxx}
-        	\end{table}
- 
-            Let event E represents Probability of forming a number greater than 5,000 divisible by 5 when the repetition of digits is not allowed .
                 
              \begin{align}
-              \pr{\text{number divisible by 5 when digits are not repeated}} &= \pr{E} \\
+              \pr{X=1} &= \frac{n(A)}{n(S)} \\
                  &= \frac{18}{48} \\
                  &= \frac{3}{8}
             \end{align}
