@@ -8,7 +8,7 @@ def my_playlist():
 		if number not in my_list:
 			my_list.append(number)
 			number_str = str(number)
-			playsound(f'/https://github.com/Arjit-Jain-24/Assignments-Probability-AI1110-/blob/main/Project/songs/'+ number_str +'.mp3')
+			playsound(f'/songs/'+ number_str +'.mp3')
 
 for times in range(0,5):
     my_playlist()
