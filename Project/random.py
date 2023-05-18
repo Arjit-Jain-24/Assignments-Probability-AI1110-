@@ -21,7 +21,7 @@ def my_playlist():
     pygame.mixer.init()
 
     while len(my_list) <= 20:
-        number = np.random.randint(1, 20)
+        number = np.random.randint(1, 21)
         if number not in my_list:
             my_list.append(number)
 
