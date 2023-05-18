@@ -30,7 +30,7 @@ def my_playlist():
             song_thread.start()
 
             # Prompt for next song in the main thread
-            user_input = input("Press 'n' for the next song, or any other key to stop: ")
+            user_input = input("Press 'n' for the next song: ")
             if user_input.lower() != 'n':
                 stop_event.set()
                 break
